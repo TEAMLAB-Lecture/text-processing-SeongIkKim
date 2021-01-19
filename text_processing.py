@@ -35,7 +35,7 @@ def normalize(input_string):
     """
     string = input_string.strip().lower()
     while "  " in string:
-        string.replace("  ", " ")
+        string = string.replace("  ", " ")
     normalized_string = string
     return normalized_string
 
