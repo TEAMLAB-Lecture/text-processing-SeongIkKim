@@ -62,5 +62,6 @@ def no_vowels(input_string):
             ''W lv Pythn!'
     """
 
-    no_vowel_string = "".join([i for i in input_string if i not in 'aeiou'])
+    no_vowel_string = "".join(
+        [i for i in input_string if i not in 'aeiouAEIOU'])
     return no_vowel_string
