@@ -61,6 +61,6 @@ def no_vowels(input_string):
             >>> tp.normalize(input_string2)
             ''W lv Pythn!'
     """
-    table = input_string.maketrans('aeiou', '')
-    no_vowel_string = input_string.translate(table)
+
+    no_vowel_string = "".join([i for i in input_string if i not in 'aeiou'])
     return no_vowel_string
